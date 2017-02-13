@@ -20,9 +20,9 @@ public class PostController {
 
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public ModelAndView listAllPosts() {
-//		List<Post> posts = getPosts.getPosts();
+		List<Post> posts = getPosts.getPosts();
 		ModelAndView mv = new ModelAndView("pages/posts/listPosts");
-//		mv.addObject("posts", posts);
+		mv.addObject("posts", posts);
 		return mv;
 	}
 
