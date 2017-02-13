@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>br.com.treld</groupId>
-	<artifactId>treld_front_end</artifactId>
+	<artifactId>treld-blog-frontend</artifactId>
 	<version>1.0</version>
 	<packaging>jar</packaging>
 

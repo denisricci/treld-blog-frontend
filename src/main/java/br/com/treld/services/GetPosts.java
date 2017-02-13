@@ -4,6 +4,7 @@ import java.net.URI;
 import java.util.Arrays;
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.RequestEntity;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
@@ -13,8 +14,9 @@ import br.com.treld.model.Post;
 
 @Service
 public class GetPosts {
-
-	public final String BASE_URL = "http://localhost:8080";
+	
+	@Value("${api.url}")
+	private String BASE_URL;	
 
 	public List<Post> getPosts() {
 		RestTemplate restTemplate = new RestTemplate();
